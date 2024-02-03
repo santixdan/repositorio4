@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+
+<body>
+    <div class="todo">
+        <div id="uno">
+            NOMBRE
+            <input type="text" placeholder="Nombre" id="nom">
+        </div>
+        <div id="uno">APELLIDO<input type="text" placeholder="Apellido" id="ape"></div>
+        <div id="uno" style="display: flex;">
+
+            <label for="op">Hombre<input type="radio" name="Hombre" id="ho" value="hombre"></label>
+
+            <label for="up">Mujer<input type="radio" name="Hombre" id="mu" value="mujer"></label>
+        </div>
+        <div id="uno">FECHA DE NACIMIENTO<input type="date" name="" id="date"></div>
+        <div id="uno">TELEFONO<input type="text" placeholder="Telefono" id="tel"></div>
+        <div id="uno">
+            TIPO DE DOCUMENTO
+            <select name="" id="lista">
+                <option value="0"></option>
+                <option value="CC">Cedula de ciudadania</option>
+                <option value="TI">Tarjeta de identidad</option>
+            </select>
+            NUMERO DE DOCUMENTO
+            <input type="text" placeholder="Nro de documento" id="docu">
+        </div>
+        <div id="uno">CORREO ELECTRONICO<input type="email" name="" id="mail" placeholder="Correo electronico"></div>
+        <div id="uno" onclick="enviar(), pintar()"><button>ENVIAR</button></div>
+    </div>
+    <div>
+        <h1 id="resultado"></h1>
+    </div>
+</body>
+<style>
+    body {
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        margin: 0%;
+    }
+
+    .todo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        /* position: absolute; */
+        top: 23%;
+        left: 20%;
+        width: 20%;
+        /* border-radius: 14%; */
+    }
+
+    #uno {
+        display: grid;
+        text-align: center;
+        margin: 3%;
+    }
+</style>
+<script>
+
+    let data = []
+    let datos = {}
+    function enviar() {
+        
+        let g = ""
+        if (document.getElementById("ho").checked) {
+            g = "Hombre"
+        }
+        else {
+            g = "Mujer"
+        }
+        datos = {
+            nombre: document.getElementById("nom").value,
+            apellido: document.getElementById("ape").value,
+            genero: g,
+            nacimiento: document.getElementById("date").value,
+            telefono: document.getElementById("tel").value,
+            tipo_documento: document.getElementById("lista").value,
+            nro_documento: document.getElementById("docu").value,
+            correo: document.getElementById("mail").value
+        }
+        console.log(datos);
+        data.push(datos)
+        console.log(data);
+    }
+    function pintar() {
+        data.forEach((item, i) => {
+            let ul = document.createElement("ul")
+            let li = document.createElement("li")
+            li.textContent = item.nombre + ", " + item.apellido + ", " + item.genero + ", " + item.nacimiento + ", " + item.telefono + ", " + item.tipo_documento + ", " + item.nro_documento + ", " + item.correo
+            ul.appendChild(li)
+            document.getElementById("resultado").appendChild(ul)
+            document.getElementById("data")="";
+        })
+    }
+
+</script>
+
+</html>

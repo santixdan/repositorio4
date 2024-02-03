@@ -1,0 +1,25 @@
+body {
+  margin: 0%;
+}
+#txt {
+  width: auto;
+}
+#fondo{
+  width: 100%;
+  height: 100vh;
+}
+#todo {
+  display: flex;
+  flex-direction: column;
+  /* position: fixed; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+#btn {
+  background-color: greenyellow;
+}
+#x {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}

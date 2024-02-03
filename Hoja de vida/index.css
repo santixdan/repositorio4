@@ -1,0 +1,1161 @@
+body {
+    margin: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+/* ----- BANNER ----- */
+
+.banner {
+    width: 100%;
+    /* height: 7%; */
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.801);
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    align-content: center;
+    /* align-items: center; */
+    z-index: 500;
+    opacity: 30;
+}
+
+.btn-banner {
+    margin: 1%;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: white;
+}
+
+.btn-banner:hover {
+    color: rgb(238, 66, 201);
+}
+
+
+#txt-banner {
+    /* width: 20%; */
+    color: rgb(238, 66, 201);
+    text-align: center;
+    /* margin-left: 8%; */
+}
+
+#img-social {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    height: 20px;
+}
+
+.boton {
+    /* width: 60%; */
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    /* margin-left: 15%; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.boton2 {
+    /* width: 20%; */
+    display: flex;
+    gap: 5%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+    justify-content: center;
+    /* align-items: center; */
+    /* margin-left: 15%; */
+}
+
+/* ----- INICIO ----- */
+#inicio {
+    height: 1000px;
+    margin: 0;
+}
+
+
+#fondo {
+    width: 100%;
+    height: 1000px;
+    z-index: -2000;
+    filter: brightness(40%);
+    /* position: relative; */
+}
+
+.txt-inicio {
+    color: white;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 400%;
+    /* z-index: 400; */
+}
+
+.btn-portafolio {
+    text-decoration: none;
+    transition: color 0.3s ease;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.btn-portafolio:hover {
+    color: rgb(238, 66, 201);
+}
+
+/* ------ SOBRE MI ----- */
+
+#sobre-mi {
+    display: flex;
+    margin: 0;
+    height: 1000px;
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    justify-content: center;
+}
+
+.izquierda {
+    display: flex;
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 7%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.derecha {
+    width: 70%;
+    margin: 8%;
+    font-size: 200%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.btn-cv {
+    /* text-decoration: none; */
+    transition: color 0.3s ease;
+    color: rgb(61, 61, 61);
+}
+
+.btn-cv:hover {
+    color: rgb(238, 66, 201);
+}
+
+/* ------ SERVICIOS ----- */
+
+#servicios {
+    height: 1000px;
+    background-color: rgb(230, 230, 230);
+    /* margin: 20%; */
+    /* align-items: center; */
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-content: center;
+}
+
+.txt-servicios {
+    text-align: center;
+    /* display: flex; */
+    /* z-index: 1; */
+    /* font-size: 40px; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-bottom: 2%; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(3, 5fr);
+    /* height: 950px; */
+    /* margin: 2%; */
+    /* margin-left: 20%; */
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    /* margin-left: 8%;
+    margin-right: 8%; */
+}
+
+.box-box {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    border-radius: 4%;
+    /* border: solid ; */
+    background-color: white;
+    /* gap: 20px; */
+    /* width: 95%; */
+    margin: 3%;
+    height: 95%;
+    font-size: 20px;
+    /* margin-inline-start: 60px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+
+.img-servicios {
+    height: 100px;
+    width: 100px;
+    align-self: center;
+    /* margin-left: 40%; */
+}
+
+/* ------ HABILIDADES ----- */
+
+
+
+.habilidades {
+    background: linear-gradient(#eb5a5acc, rgba(33, 16, 16, .8)), url("fondodefondo.avif");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+#info {
+    width: 50%;
+    margin: 1%;
+    display: grid;
+    grid-template-columns: 1fr auto;
+    text-align: left;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.barra {
+    background-color: gray;
+    width: 50%;
+    height: 6px;
+    margin: 10px;
+}
+
+#html {
+    width: 70%;
+    height: 6px;
+    background-color: white;
+    animation: html 2s forwards;
+}
+
+
+#javaScript {
+    width: 70%;
+    height: 6px;
+    background-color: white;
+    animation: javaScript 2s forwards;
+}
+
+#datos {
+    width: 70%;
+    height: 6px;
+    background-color: white;
+    animation: datos 2s forwards;
+}
+
+#python {
+    width: 70%;
+    height: 6px;
+    background-color: white;
+    animation: python 2s forwards;
+}
+
+@keyframes html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
+
+@keyframes javaScript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 70%;
+    }
+}
+
+@keyframes datos {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes python {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 20%;
+    }
+}
+
+/* ------ PORTAFOLIO ----- */
+
+#portafolio {
+    height: auto;
+    display: flex;
+    justify-content: center;
+    /* position: relative; */
+}
+
+.caja-caja{
+    display: flex;
+    justify-content: center;
+    position: relative;
+    /* border: 1px solid black; */
+    /* margin: 0%; */
+}
+
+#txt-proyectos {
+    text-align: center;
+    font-size: 30px;
+}
+
+.img-proyecto {
+    /* width: 80%;
+    height: 100%; */
+    filter: grayscale(1);
+    /* position: absolute; */
+    /* object-fit: cover; */
+    transition: .5s;
+}
+
+.img-proyecto:hover {
+    filter: grayscale(0);
+    /* position: relative; */
+}
+
+.magia {
+    position: absolute;
+    text-align: center;
+    /* height: 20%; */
+    margin-left: 10%;
+    left: 0px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: rgb(238, 66, 201);
+    width: 80%;
+    /* padding: 5px; */
+    opacity: 0;
+    bottom: 20%;
+    transition: .5s;
+}
+
+.magia:hover{
+    /* filter: grayscale(0); */
+    opacity: 1;
+    bottom: 20%;
+    /* transition: opacity .5s, bottom .5s; */
+}
+
+/* ----- CONTACTANOS ----- */
+
+#contacto {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    /* align-content: center; */
+    /* gap: 15%; */
+    background-color: rgb(230, 230, 230);
+}
+
+.nom-dic {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 90%;
+    gap: 1%;
+    height: 100px;
+}
+
+.tem-men {
+    display: grid;
+    grid-template-rows: 1fr auto;
+    width: 90%;
+    gap: 4%;
+    margin-top: 2%;
+    /* z-index: 1; */
+    /* position: absolute; */
+}
+
+#tema {
+    height: 100px;
+}
+
+#mensaje {
+    height: 200px;
+}
+
+#txt-contacto {
+    font-size: 40px;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* margin-bottom: 2%; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* margin: 0; */
+}
+
+#send {
+    /* border: 1px solid gray;
+    border-radius: 40%; */
+    transition: color 0.3s ease;
+    margin: 30px;
+}
+
+#send:hover {
+    color: rgb(238, 66, 201);
+    /* color: rgb(238, 66, 201); */
+}
+
+/* ----- PIE ----- */
+
+#pie {
+    background-color: black;
+    color: white;
+    margin: 0px;
+    display: grid;
+    grid-template-rows: 1fr auto;
+    /* align-items: center; */
+    /* align-content: center; */
+    /* align-self: center; */
+    /* align-tracks: center; */
+    justify-content: center;
+}
+
+
+.boton3 {
+    /* width: 20%; */
+    display: flex;
+    gap: 5%;
+
+    justify-content: center;
+    /* align-content: center; */
+    /* align-items: center; */
+    /* margin-left: 15%; */
+}
+
+@media screen and (min-width: 1810px) {
+    /* ----- BANNER ----- */
+
+    #txt-banner {
+        font-size: 240%;
+        margin: 0%;
+    }
+
+    .btn-banner {
+        font-size: 240%;
+    }
+
+    #img-social {
+        height: 55px;
+
+    }
+
+    /* ------ INICIO ----- */
+
+    #inicio {
+        height: auto;
+    }
+
+    #fondo {
+        height: auto;
+    }
+
+    .txt-inicio {
+        font-size: 500%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* ------ SOBRE MI ----- */
+
+    #sobre-mi {
+        height: auto;
+        justify-content: center;
+    }
+
+    .derecha {
+        font-size: 280%;
+    }
+
+    .img-mi {
+        height: 90%;
+        /* align-content: center; */
+        justify-content: center;
+    }
+
+    /* ----- SERVICIOS ----- */
+
+    #servicios {
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+
+    .txt-servicios {
+        font-size: 280%;
+    }
+
+    .box-box {
+        font-size: 280%;
+    }
+
+    .img-servicios {
+        height: 200px;
+        width: 200px;
+    }
+
+    /* ----- HABILIDADES ----- */
+
+    .habilidades {
+        height: 1370px;
+    }
+
+    .barra {
+        height: 20px;
+    }
+
+    #html {
+        height: 20px;
+    }
+
+
+    #javaScript {
+        height: 20px;
+    }
+
+    #datos {
+        height: 20px;
+    }
+
+    #python {
+        height: 20px;
+    }
+
+    #habi {
+        font-size: 400%;
+    }
+
+    #info {
+        font-size: 400%;
+    }
+
+    /* ----- PORTAFOLIO ----- */
+
+    #portafolio {
+        height: auto;
+
+    }
+
+    #txt-proyectos {
+        font-size: 300%;
+        /* width: 80%; */
+    }
+
+    .magia{
+        width: 90%;
+        /* height: 20%; */
+        /* margin: 0%; */
+        margin-left: 5%;
+        bottom: 10%;
+        font-size: 175%;
+    }
+
+    .magia:hover{
+        bottom: 10%;
+    }
+
+    .img-proyecto {
+        height: 90%;
+        width: 90%;
+        /* margin: 0px; */
+    }
+
+    .caja {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    /* ----- CONTACTO ----- */
+    #contacto {
+        display: flex;
+        justify-content: center;
+        height: auto;
+    }
+
+    #txt-contacto {
+        font-size: 300%;
+    }
+
+    .nom-dic {
+        height: 155px;
+    }
+
+    .tem-men {
+        margin-top: 1%;
+    }
+
+    #mensaje {
+        height: 600px;
+    }
+
+    #tema {
+        height: 155px;
+    }
+
+    #contacto input {
+        font-size: 280%;
+    }
+
+    #send {
+        font-size: 300%;
+    }
+
+    /* ----- PIE----- */
+
+    #txt-pie {
+        font-size: 280%;
+    }
+}
+
+@media screen and (max-width: 1809px) and (min-width: 1025px) {
+    /* ----- BANNER ----- */
+
+    #txt-banner {
+        font-size: 120%;
+    }
+
+    .btn-banner {
+        font-size: 120%;
+    }
+
+    #img-social {
+        height: 25px;
+    }
+
+    /* ------ INICIO ----- */
+
+    #inicio {
+        height: auto;
+    }
+
+    #fondo {
+        height: auto;
+    }
+
+    .txt-inicio {
+        font-size: 340%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* ------ SOBRE MI ----- */
+
+    #sobre-mi {
+        height: auto;
+        justify-content: center;
+    }
+
+    .derecha {
+        font-size: 150%;
+    }
+
+    .img-mi {
+        height: 80%;
+        /* align-content: center; */
+        justify-content: center;
+    }
+
+    /* ----- SERVICIOS ----- */
+
+    #servicios {
+        height: 880px;
+        display: flex;
+        justify-content: center;
+        /* width: 100%; */
+    }
+
+    .txt-servicios {
+        font-size: 140%;
+    }
+
+    .box-box {
+        font-size: 130%;
+    }
+
+    /* ----- HABILIDADES ----- */
+
+    .habilidades {
+        height: auto;
+    }
+
+    #habi {
+        font-size: 155%;
+    }
+
+    #info {
+        font-size: 155%;
+    }
+
+
+    /* ----- PORTAFOLIO ----- */
+    #portafolio {
+        height: auto;
+
+    }
+
+    #txt-proyectos {
+        font-size: 180%;
+        /* width: 80%; */
+    }
+
+    .img-proyecto {
+        height: 80%;
+        width: 80%;
+        /* margin: 0px; */
+    }
+
+    .magia{
+        font-size: 90%;
+    }
+
+    .caja {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    /* ----- CONTACTO ----- */
+    #contacto {
+        /* display: flex;
+        justify-content: center; */
+        height: auto;
+    }
+
+    #txt-contacto {
+        font-size: 170%;
+    }
+
+    #contacto input {
+        font-size: 120%;
+    }
+
+    .nom-dic {
+        height: 80px;
+    }
+
+    .tem-men {
+        margin-top: 1%;
+    }
+
+    #tema {
+        height: 80px;
+    }
+
+    #mensaje {
+        height: 240px;
+    }
+
+    #send {
+        font-size: 150%;
+    }
+}
+
+@media screen and (max-width: 1024px) and (min-width: 768px) {
+    /* ----- BANNER ----- */
+
+    #txt-banner {
+        font-size: 120%;
+    }
+
+    .btn-banner {
+        font-size: 120%;
+    }
+
+    #img-social {
+        height: 22px;
+    }
+
+    /* ------ INICIO ----- */
+
+    #inicio {
+        height: 800px;
+    }
+
+    #fondo {
+        height: 800px;
+    }
+
+    .txt-inicio {
+        font-size: 300%;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    /* ------ SOBRE MI ----- */
+
+    #sobre-mi {
+        height: auto;
+        justify-content: center;
+    }
+
+    .derecha {
+        font-size: 135%;
+    }
+
+    .img-mi {
+        height: 65%;
+        /* align-content: center; */
+        justify-content: center;
+    }
+
+    /* ----- SERVICIOS ----- */
+
+    #servicios {
+        height: auto;
+        /* display: flex;
+        justify-content: center; */
+    }
+
+    .box {
+        margin: 1%;
+    }
+
+    .img-servicios {
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* align-content: center; */
+        align-self: center;
+    }
+
+    .txt-servicios {
+        font-size: 100%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    /* ----- HABILIDADES ----- */
+
+    .habilidades {
+        height: 600px;
+    }
+
+    #habi {
+        font-size: 150%;
+    }
+
+    #info {
+        font-size: 150%;
+    }
+
+
+    /* ----- PORTAFOLIO ----- */
+
+    #portafolio {
+        height: auto;
+
+    }
+
+    #txt-proyectos {
+        font-size: 135%;
+        /* width: 80%; */
+    }
+
+    .magia{
+        font-size: 60%;
+    }
+
+    .img-proyecto {
+        height: 80%;
+        width: 80%;
+        /* margin: 0px; */
+    }
+
+    .caja {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+
+    /* ----- CONTACTO ----- */
+    #contacto {
+        display: flex;
+        justify-content: center;
+        height: 600px;
+    }
+
+    #txt-contacto{
+        font-size: 135%;
+    }
+
+    .nom-dic {
+        height: 60px;
+    }
+
+    .tem-men {
+        margin-top: 1%;
+    }
+
+    #tema {
+        height: 60px;
+    }
+
+}
+
+@media screen and (max-width: 767px) and (min-width: 370px){
+    /* ----- BANNER ----- */
+
+    #txt-banner {
+        font-size: 85%;
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .btn-banner {
+        font-size: 85%;
+        /* display: grid;
+        grid-template-columns: 1fr auto 1fr; */
+        /* display: flex;
+        flex-direction: row; */
+        justify-content: center;
+    }
+
+    #img-social {
+        height: 10px;
+        margin-bottom: 2%;
+
+
+    }
+
+    .boton {
+        margin-left: 0px;
+        text-align: center;
+        /* display: flex; */
+        /* flex-direction: column; */
+        /* display: grid;
+        grid-template-rows: repeat(5,1fr); */
+    }
+
+    .boton2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-self: center;
+        align-content: center;
+        align-items: center;
+        /* display: grid; */
+        /* grid-template-rows: repeat(3,1fr); */
+        /* display: grid;
+        grid-template-columns: 1fr; */
+    }
+
+    /* ------ INICIO ----- */
+
+    #inicio {
+        height: 550px;
+    }
+
+    #fondo {
+        height: 550px;
+    }
+
+    .txt-inicio {
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-size: 150%;
+    }
+
+    /* ------ SOBRE MI ----- */
+
+    #sobre-mi {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0%;
+
+    }
+
+    .derecha {
+        font-size: 110%;
+        margin: 3%;
+    }
+
+    .img-mi {
+        height: 25%;
+        margin: 0%;
+        /* align-content: center; */
+        /* justify-content: center; */
+    }
+
+    /* ----- SERVICIOS ----- */
+
+    #servicios {
+        height: auto;
+        /* display: flex;
+        justify-content: center; */
+
+    }
+
+    .box {
+        margin: 1%;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .box-box {
+        font-size: 105%;
+    }
+
+    .img-servicios {
+        /* display: flex; */
+        /* justify-content: center; */
+        /* align-items: center; */
+        /* align-content: center; */
+        align-self: center;
+    }
+
+    .txt-servicios {
+        font-size: 105%;
+        margin: 0;
+        margin-top: 20px;
+    }
+
+    /* ----- HABILIDADES ----- */
+
+    .habilidades {
+        height: 500px;
+    }
+
+    .barra {
+        height: 7px;
+        width: 90%;
+    }
+
+    #html {
+        height: 7px;
+        width: 90%;
+    }
+
+
+    #javaScript {
+        height: 7px;
+        width: 90%;
+    }
+
+    #datos {
+        height: 7px;
+        width: 90%;
+    }
+
+    #python {
+        height: 7px;
+        width: 90%;
+    }
+
+    #habi {
+        font-size: 100%;
+    }
+
+    #info {
+        font-size: 100%;
+        width: 90%;
+    }
+
+    /* ----- PORTAFOLIO ----- */
+
+    #portafolio {
+        height: auto;
+
+    }
+
+    #txt-proyectos {
+        font-size: 300%;
+        /* width: 80%; */
+    }
+
+    .magia{
+        width: 90%;
+        /* height: 30%; */
+        /* margin: 0%; */
+        margin-left: 5%;
+        bottom: 10%;
+    }
+
+    .magia:hover{
+        bottom: 10%;
+    }
+
+    .img-proyecto {
+        height: 90%;
+        width: 90%;
+        /* margin: 0px; */
+    }
+
+    .caja {
+        display: grid;
+        grid-template-rows: repeat(9, 1fr);
+
+    }
+
+
+    /* ----- CONTACTO ----- */
+
+    #txt-contacto{
+        text-align: center;
+    }
+
+    .nom-dic {
+        height: 60px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .tem-men {
+        margin-top: 0.1%;
+    }
+
+    #tema {
+        height: 60px;
+    }
+
+    /* ----- PIE ----- */
+
+    #txt-pie{
+        text-align: center;
+    }
+}

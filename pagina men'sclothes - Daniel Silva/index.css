@@ -1,0 +1,197 @@
+.encabezado{
+    display: flex;
+}
+.titulo1{
+    font-weight: bolder;
+}
+.titulo{
+    display: flex;
+    font-size: 10%;
+}
+body{
+    margin: 1%;
+    background-color: rgb(241, 241, 241);
+}
+.botones{
+    border: 0;
+    background-color: white;
+    /* margin-right: 20px; */
+    margin-left: 0.3%;
+    margin-top: 0.2%;
+    margin-bottom: 0.1%;
+}
+.cajas{
+    display: flex;
+    gap: 0.3%;
+    margin: 0.29%;
+}
+.derecha{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+.izquierda{
+    /* background-position: center; */
+    width: 70%;
+    /* background-size: auto; */
+    /* background-repeat: no-repeat; */
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    background-color: #33341e;
+}
+.cajas1{
+    height: 50%;
+    display: flex;
+    gap: 40%;
+    background-color: #505141;
+    margin-bottom: 1%;
+}
+.cajas2{
+    height: 50%;
+    display: flex;
+    background-color: #838A84;
+    margin-top: 1%;
+    gap: 30%;
+}
+.text-left{
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    font-size: 250%;
+    color: rgb(224, 224, 224);
+    /* position: absolute; */
+    /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* display: inline; */
+}
+.text-right{
+    font-size: 250%;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.new_products{
+    /* width: 20%; */
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.box{
+    width: 20%;
+    /* border: 1px solid blue; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.21%;
+}
+.add{
+    background-color: black;
+    color: white;
+    margin-left: 30%;
+    /* margin-right: 30%; */
+}
+.special_product{
+    display: flex;
+    justify-content: center;
+    gap: 5%;
+}
+.jackets{
+    color: white;
+    /* justify-content: right; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    gap: 0.21%;
+    margin: 0.21%;
+    height: 200px;
+}
+.text-fin{
+    display: flex; 
+    justify-content: center;
+    flex-direction: column;
+    font-size: 240%;
+    color: rgb(224, 224, 224);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.relleno{
+    /* color: white; */
+    /* justify-content: right; */
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    /* align-content: center; */
+    /* gap: 10px; */
+    /* margin: 1%; */
+    height: 100px;
+}
+.text-rel{
+    background-color: #dcdcdc;
+    border: 1px solid rgb(187, 187, 187);
+    width: 33.3%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 100%;
+    margin: 0.5%;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: rgb(141, 141, 141);
+    
+}
+.jaja{
+    /* font-weight: bolder; */
+    color: rgb(0, 0, 0);
+    font-size: 150%;
+}
+.pie-fin{
+    display: flex;
+    gap: 15%;
+    margin: 1%;
+}
+/* Estilos generales para todos los tamaños de pantalla */
+h1 {
+    text-align: center;
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  /* Estilos para pantallas con un ancho máximo de 768px */
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 24px;
+    }
+  
+    p {
+      font-size: 14px;
+    }
+  }
+  
+  /* Estilos para pantallas con un ancho mínimo de 769px y un ancho máximo de 1024px */
+  @media (min-width: 769px) and (max-width: 1024px) {
+    h1 {
+      font-size: 32px;
+    }
+  
+    p {
+      font-size: 18px;
+    }
+  }
+  
+  /* Estilos para pantallas con un ancho mínimo de 1025px */
+  @media (min-width: 1025px) {
+    h1 {
+      font-size: 48px;
+    }
+  
+    p {
+      font-size: 20px;
+    }
+  }
