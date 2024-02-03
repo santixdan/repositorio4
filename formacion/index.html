@@ -33,7 +33,7 @@
             <input type="text" placeholder="Nro de documento" id="docu">
         </div>
         <div id="uno">CORREO ELECTRONICO<input type="email" name="" id="mail" placeholder="Correo electronico"></div>
-        <div id="uno" onclick="enviar(), pintar()"><button>ENVIAR</button></div>
+        <div id="uno" onclick="enviar(), borrar(),pintar()"><button>ENVIAR</button></div>
     </div>
     <div>
         <h1 id="resultado"></h1>
@@ -98,6 +98,17 @@
             document.getElementById("resultado").appendChild(ul)
             document.getElementById("data")="";
         })
+    }
+    function borrar(){
+        document.getElementById("nom").value = ""
+        document.getElementById("ape").value = ""
+        document.getElementById("date").value = ""
+        document.getElementById("ho").checked= ""
+        document.getElementById("mu").checked = ""
+        document.getElementById("tel").value = ""
+        document.getElementById("lista").value = ""
+        document.getElementById("docu").value = ""
+        document.getElementById("mail").value = ""
     }
 
 </script>
