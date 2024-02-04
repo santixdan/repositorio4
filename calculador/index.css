@@ -23,3 +23,10 @@ body {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
 }
+
+@media screen and (max-width:500px) and (min-width:250px){
+  #todo{
+    top: 30%;
+    left: 25%;
+  }
+}
