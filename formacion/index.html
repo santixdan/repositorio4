@@ -33,7 +33,7 @@
             <input type="text" placeholder="Nro de documento" id="docu">
         </div>
         <div id="uno">CORREO ELECTRONICO<input type="email" name="" id="mail" placeholder="Correo electronico"></div>
-        <div id="uno" onclick="enviar(), borrar(),pintar()"><button>ENVIAR</button></div>
+        <div id="uno" onclick="enviar(),pintar()"><button>ENVIAR</button></div>
     </div>
     <div>
         <h1 id="resultado"></h1>
@@ -50,16 +50,16 @@
         flex-direction: column;
         align-items: center;
         /* position: absolute; */
-        top: 23%;
-        left: 20%;
-        width: 20%;
+        /* top: 23%; */
+        /* left: 600%; */
+        /* width: 20%; */
         /* border-radius: 14%; */
     }
 
     #uno {
         display: grid;
         text-align: center;
-        margin: 3%;
+        margin: 1%;
     }
 </style>
 <script>
@@ -88,18 +88,6 @@
         console.log(datos);
         data.push(datos)
         console.log(data);
-    }
-    function pintar() {
-        data.forEach((item, i) => {
-            let ul = document.createElement("ul")
-            let li = document.createElement("li")
-            li.textContent = item.nombre + ", " + item.apellido + ", " + item.genero + ", " + item.nacimiento + ", " + item.telefono + ", " + item.tipo_documento + ", " + item.nro_documento + ", " + item.correo
-            ul.appendChild(li)
-            document.getElementById("resultado").appendChild(ul)
-            document.getElementById("data")="";
-        })
-    }
-    function borrar(){
         document.getElementById("nom").value = ""
         document.getElementById("ape").value = ""
         document.getElementById("date").value = ""
@@ -109,6 +97,19 @@
         document.getElementById("lista").value = ""
         document.getElementById("docu").value = ""
         document.getElementById("mail").value = ""
+    }
+    function pintar() {
+        let tableBody = document.getElementById("resultado");
+        while (tableBody.firstChild) {
+            tableBody.removeChild(tableBody.firstChild);
+        }
+        data.forEach((item) => {
+            let ul = document.createElement("ul")
+            let li = document.createElement("li")
+            li.textContent = item.nombre + ", " + item.apellido + ", " + item.genero + ", " + item.nacimiento + ", " + item.telefono + ", " + item.tipo_documento + ", " + item.nro_documento + ", " + item.correo
+            ul.appendChild(li)
+            document.getElementById("resultado").appendChild(ul)
+        })
     }
 
 </script>
