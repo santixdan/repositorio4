@@ -99,8 +99,10 @@
         if (document.getElementById("ho").checked) {
             g = "Hombre"
         }
-        else {
+        else if (document.getElementById("mu").checked) {
             g = "Mujer"
+        } else {
+            g = null
         }
         datos = {
             nombre: document.getElementById("nom").value,
