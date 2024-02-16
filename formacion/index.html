@@ -6,47 +6,46 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
 </head>
-
 <body>
-    <img src="https://cdn.pixabay.com/photo/2016/02/21/11/33/star-1213455_1280.jpg" id="fondo">
-    <div class="todo">
-        <div id="uno">
-            NOMBRE
-            <input type="text" placeholder="Nombre" id="nom">
+    <div id="amen">
+        <div class="todo">
+            <div id="uno">
+                NOMBRE
+                <input type="text" placeholder="Nombre" id="nom">
+            </div>
+            <div id="uno">APELLIDO<input type="text" placeholder="Apellido" id="ape"></div>
+            <div id="uno" style="display: flex;">
+                <label for="op">Hombre<input type="radio" name="Hombre" id="ho" value="hombre"></label>
+                <label for="up">Mujer<input type="radio" name="Hombre" id="mu" value="mujer"></label>
+            </div>
+            <div id="uno">FECHA DE NACIMIENTO<input type="date" name="" id="date"></div>
+            <div id="uno">TELEFONO<input type="text" placeholder="Telefono" id="tel"></div>
+            <div id="uno">
+                TIPO DE DOCUMENTO
+                <select name="" id="lista">
+                    <option value=""></option>
+                    <option value="CC">Cedula de ciudadania</option>
+                    <option value="TI">Tarjeta de identidad</option>
+                </select>
+                NUMERO DE DOCUMENTO
+                <input type="text" placeholder="Nro de documento" id="docu">
+            </div>
+            <div id="uno">CORREO ELECTRONICO<input type="email" name="" id="mail" placeholder="Correo electronico">
+            </div>
+            <div id="uno"><button onclick="enviar(), pintar()">ENVIAR</button></div>
         </div>
-        <div id="uno">APELLIDO<input type="text" placeholder="Apellido" id="ape"></div>
-        <div id="uno" style="display: flex;">
-
-            <label for="op">Hombre<input type="radio" name="Hombre" id="ho" value="hombre"></label>
-
-            <label for="up">Mujer<input type="radio" name="Hombre" id="mu" value="mujer"></label>
+        <div id="resultado">
         </div>
-        <div id="uno">FECHA DE NACIMIENTO<input type="date" name="" id="date"></div>
-        <div id="uno">TELEFONO<input type="text" placeholder="Telefono" id="tel"></div>
-        <div id="uno">
-            TIPO DE DOCUMENTO
-            <select name="" id="lista">
-                <option value=""></option>
-                <option value="CC">Cedula de ciudadania</option>
-                <option value="TI">Tarjeta de identidad</option>
-            </select>
-            NUMERO DE DOCUMENTO
-            <input type="text" placeholder="Nro de documento" id="docu">
-        </div>
-        <div id="uno">CORREO ELECTRONICO<input type="email" name="" id="mail" placeholder="Correo electronico"></div>
-        <div id="uno"><button onclick="enviar(), pintar()">ENVIAR</button></div>
     </div>
-    <div id="resultado">
-    </div>
+    <script src=""></script>
+
 </body>
 <style>
     body {
         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
         margin: 0%;
-        /* background-color: rgb(255, 0, 0); */
         background-image: url('https://cdn.pixabay.com/photo/2016/02/21/11/33/star-1213455_1280.jpg');
         background-size: cover;
-        /* para que la imagen se ajuste al tamaño del fondo */
         display: flex;
         flex-direction: row;
     }
@@ -54,16 +53,18 @@
     .todo {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        /* margin: 20%; */
         align-items: center;
         background-color: rgba(198, 255, 252, 0.323);
-        width: 11%;
-        /* height: 150%; */
+        width: 210px;
         left: 10%;
         top: 20%;
         position: absolute;
-        /* position: fixed; */
-        /* z-index: 10000; */
-        /* justify-content: left; */
+    }
+
+    #amen {
+        display: block;
     }
 
     #uno {
@@ -71,35 +72,29 @@
         text-align: center;
         margin: 5%;
         gap: 6%;
-        /* width: 10%; */
-        /* height: 20%; */
-        /* border: 1px solid black; */
-        /* background-color: white; */
     }
 
     #resultado {
         color: aliceblue;
         width: 5%;
+        top: 0px;
+        left: 40%;
+        top: 20%;
+        position: absolute;
     }
 
-    /* li{
-        border: 5px solid white;
+    th {
+        border: 1px solid white;
     }
-    ul{
-        border: 5px solid white;
-    } */
-
 
     td {
         border: 1px solid white;
     }
 </style>
 <script>
-
     let data = []
     let datos = {}
     function enviar() {
-
         let g = ""
         if (document.getElementById("ho").checked) {
             g = "Hombre"
@@ -135,51 +130,47 @@
         while (tableBody.firstChild) {
             tableBody.removeChild(tableBody.firstChild);
         }
-        let fila2= document.createElement("tr")
-            let celda2= document.createElement("th")
+        let fila2 = document.createElement("tr")
+        let celda2 = document.createElement("th")
 
-            celda2.textContent="Nombre"
-            fila2.appendChild(celda2)
+        celda2.textContent = "Nombre"
+        fila2.appendChild(celda2)
 
-            celda2= document.createElement("th")
-            celda2.textContent="Apellido"
-            fila2.appendChild(celda2)
+        celda2 = document.createElement("th")
+        celda2.textContent = "Apellido"
+        fila2.appendChild(celda2)
 
-            celda2= document.createElement("th")
-            celda2.textContent="Genero"
-            fila2.appendChild(celda2)
+        celda2 = document.createElement("th")
+        celda2.textContent = "Genero"
+        fila2.appendChild(celda2)
 
-            celda2= document.createElement("th")
-            celda2.textContent="Fecha de nacimiento"
-            fila2.appendChild(celda2)
+        celda2 = document.createElement("th")
+        celda2.textContent = "Fecha de nacimiento"
+        fila2.appendChild(celda2)
 
-            celda2= document.createElement("th")
-            celda2.textContent="Telefono"
-            fila2.appendChild(celda2)
+        celda2 = document.createElement("th")
+        celda2.textContent = "Telefono"
+        fila2.appendChild(celda2)
 
-            celda2= document.createElement("th")
-            celda2.textContent="Tipo de documento"
-            fila2.appendChild(celda2)
+        celda2 = document.createElement("th")
+        celda2.textContent = "Tipo de documento"
+        fila2.appendChild(celda2)
 
-            celda2= document.createElement("th")
-            celda2.textContent="Nro documento"
-            fila2.appendChild(celda2)
+        celda2 = document.createElement("th")
+        celda2.textContent = "Nro documento"
+        fila2.appendChild(celda2)
 
-            celda2= document.createElement("th")
-            celda2.textContent="Correo"
-            fila2.appendChild(celda2)
-            document.getElementById("resultado").appendChild(fila2)
-        data.forEach((item) => {
+        celda2 = document.createElement("th")
+        celda2.textContent = "Correo"
+        fila2.appendChild(celda2)
+        document.getElementById("resultado").appendChild(fila2)
+        data.forEach((item, index) => {
             let fila = document.createElement("tr");
             let celda = document.createElement("td");
             let ul = document.createElement("ul")
             let li = document.createElement("li")
             li.textContent = item.nombre + ", " + item.apellido + ", " + item.genero + ", " + item.nacimiento + ", " + item.telefono + ", " + item.tipo_documento + ", " + item.nro_documento + ", " + item.correo
             ul.appendChild(li)
-
-            // document.getElementById("resultado").appendChild(ul)
-            
-            // document.getElementById("resultado").appendChild(ul)
 
             celda = document.createElement("td");
             celda.textContent = item.nombre
@@ -213,12 +204,30 @@
             celda.textContent = item.correo
             fila.appendChild(celda)
 
+            celda = document.createElement("td");
+            let eliminar = document.createElement("button")
+            eliminar.textContent = "❌"
+            eliminar.addEventListener("click", () => {
+                data.splice(index, 1)
+            })
+
+            let editar = document.createElement("button")
+            editar.textContent = "📝"
+            editar.addEventListener("click", () => {
+                document.getElementById("nom").value = data[index].nombre
+                document.getElementById("ape").value = data[index].apellido
+                document.getElementById("date").value = data[index].nacimiento
+                document.getElementById("tel").value = data[index].telefono
+                document.getElementById("lista").value = data[index].tipo_documento
+                document.getElementById("docu").value = data[index].nro_documento
+                document.getElementById("mail").value = data[index].correo
+            })
+            celda.appendChild(editar)
+            celda.appendChild(eliminar)
+            fila.appendChild(celda)
             document.getElementById("resultado").appendChild(fila)
-            // console.log(fila);
         })
-
     }
-
 </script>
 
 </html>
