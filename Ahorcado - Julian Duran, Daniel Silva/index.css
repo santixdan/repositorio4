@@ -1,0 +1,422 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    gap: 0%;
+}
+
+body {
+    background-image: url("https://parroquiasanjosecoruna.files.wordpress.com/2014/12/fondo-animados-estrellas.gif");
+}
+
+@font-face {
+    font-family: name;
+    src: url(BleedingPixels.ttf);
+}
+
+@font-face {
+    font-family: namo;
+    src: url(AngryBirdsPixela.ttf);
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 90vh;
+}
+
+#tittle {
+    text-decoration: none;
+    font-family: name;
+    font-weight: 100;
+    text-align: center;
+    font-size: 1000%;
+    animation: desvanecer 3s ease-in-out infinite;
+}
+
+#tittlecom {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: name;
+    /* font-weight: 100; */
+    text-align: center;
+    font-size: 1000%;
+    animation: desvanecer 3s ease-in-out infinite;
+}
+
+@keyframes desvanecer {
+    0% {
+        color: red;
+    }
+
+    25% {
+        color: blue;
+    }
+
+    50% {
+        color: rgb(40, 179, 40);
+    }
+
+    75% {
+        color: yellow;
+    }
+
+    100% {
+        color: red;
+    }
+}
+
+#jugar {
+    display: flex;
+    justify-content: center;
+    width: 300px;
+}
+
+#jugarr {
+    display: flex;
+    justify-content: center;
+}
+
+#botona {
+    border: 0px;
+    font-family: namo;
+    font-size: 230%;
+    color: white;
+    background-color: rgba(0, 255, 255, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+#botona:hover {
+    color: rgb(174, 0, 255);
+}
+
+#cuadroimg {
+    width: 23%;
+    height: 400px;
+    position: relative;
+    left: 4%;
+    top: 80px;
+    background-color: rgb(96, 132, 187);
+    border: 10px solid rgb(47, 0, 255);
+    border-style: groove;
+    border-radius: 10px;
+}
+
+#imagenes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+
+}
+
+#anim {
+    width: 130%;
+}
+
+#comi {
+    width: 90%;
+}
+
+#alea {
+    width: 83%;
+}
+
+#img-difi {
+    width: 50%;
+}
+
+#esqui {
+    width: 40%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}
+
+#inten {
+    color: white;
+    float: right;
+    font-family: namo;
+    margin-top: 5%;
+    font-size: 300%;
+}
+
+#todo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    float: right;
+    width: 50%;
+}
+
+#word {
+    font-family: namo;
+    font-size: 400%;
+    color: white;
+}
+
+#keyboard {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+#keyboard button {
+    font-family: namo;
+    margin-left: 10px;
+    margin-right: 10px;
+    background-color: rgba(240, 248, 255, 0);
+    border: rgba(245, 222, 179, 0);
+    font-size: 360%;
+    color: white;
+}
+
+#alerta{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.61);
+    border: rgba(240, 248, 255, 0);
+    color: red;
+    font-family: name;
+    font-size: 1050%;
+    justify-content:center;
+    height: 98vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+}
+
+#alerta1{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.61);
+    border: rgba(240, 248, 255, 0);
+    color: yellow;
+    font-family: name;
+    font-size: 1050%;
+    justify-content: center;
+    height: 98vh;
+    width: 100%;
+    position: absolute;
+    z-index: 1000;
+}
+
+#reiten{
+    background-color: rgba(240, 248, 255, 0);
+    border: rgba(102, 51, 153, 0);
+    color: white;
+    font-size: 50%;
+    font-family: namo;
+    transition: 0.3s;
+}
+#reiten:hover {
+    color: rgb(174, 0, 255);
+}
+
+#volver{
+    background-color: rgba(240, 248, 255, 0);
+    border: rgba(102, 51, 153, 0);
+    color: white;
+    font-size: 50%;
+    font-family: namo;
+    transition: 0.3s;
+}
+#volver:hover {
+    color: rgb(174, 0, 255);
+}
+#alertaPri{
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0);
+    border: none;
+    justify-content: center;
+    transform: translate(0%,85%);
+    gap: 5%;
+    margin: 0%;
+    padding: 0%;
+}
+#mensajePri{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+#imgfacil{
+    width: 60%;
+}
+#btnnivel{
+    background-color: rgba(250, 235, 215, 0);
+    border: none;
+}
+@media screen and (max-width:600px) and (min-width:300px){
+    #tittle{
+        font-size: 310%;
+    }
+    #botona{
+        font-size: 150%;
+    }
+    #imagenes{
+        display: flex;
+        flex-direction: column;
+    }
+    #container{
+        transform: translate(0%,5%);
+    }
+    #anim {
+        width: 55%;
+    }
+    #comi {
+        width: 35%;
+    }
+    #alea {
+        width: 30%;
+    }
+    #tittlecom{
+        position: fixed;
+        transform: translate(0%,0%);
+        font-size: 310%;
+    }
+    #alertaPri{
+        display: flex;
+        flex-direction: column;
+        transform: translate(0%,25%);
+    }
+    #imgfacil{
+        width: 120px;
+    }
+    #inten {
+        margin-top: 5%;
+        font-size: 250%;
+    }
+    #word {
+        font-size: 250%;
+        margin-top: 60%;
+    }
+    #todo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        float: none;
+    }
+    #keyboard {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        width: 100%;
+    }
+    #keyboard button {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 250%;
+    }
+    #esqui{
+        transform: translate(10%,-10%);
+        width: 70%;
+    }
+    #alerta{
+        position: fixed;
+        display: flex;
+        font-size: 50px;
+        top: 0%;
+        height: 150vh;
+        padding-bottom: 300px;
+    }
+    #alerta1{
+        position: fixed;
+        display: flex;
+        font-size: 50px;
+        top: 0%;
+        height: 150vh;
+        padding-bottom: 300px;
+    }
+    #mensajePri{
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media screen and (max-width:1000px) and (min-width:601px){
+    #tittle{
+        font-size: 450%;
+    }
+    #botona{
+        font-size: 200%;
+    }
+    #imagenes{
+        display: flex;
+        flex-direction: column;
+    }
+    #container{
+        transform: translate(0%,5%);
+    }
+    #anim {
+        width: 55%;
+    }
+    #comi {
+        width: 35%;
+    }
+    #alea {
+        width: 30%;
+    }
+    #tittlecom{
+        position: fixed;
+        transform: translate(0%,0%);
+        font-size: 450%;
+    }
+    #alertaPri{
+        display: flex;
+        flex-direction: column;
+        transform: translate(0%,25%);
+    }
+    #imgfacil{
+        width: 130px;
+    }
+    #inten {
+        margin-top: 5%;
+        font-size: 250%;
+    }
+    #word {
+        font-size: 250%;
+        /* margin-top: 60%; */
+    }
+    #todo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* width: 100%; */
+        /* float: none; */
+    }
+    #keyboard {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        width: 100%;
+    }
+    #keyboard button {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 200%;
+    }
+    #esqui{        
+        transform: translate(-20%,75px);
+        width: 300px;
+    }
+    #alerta{
+        position: fixed;
+        /* display: flex; */
+        font-size: 75px;
+        top: 0%;
+        height: 150vh;
+        padding-bottom: 300px;
+    }
+    #alerta1{
+        position: fixed;
+        /* display: flex; */
+        font-size: 75px;
+        top: 0%;
+        height: 150vh;
+        padding-bottom: 300px;
+    }
+    #mensajePri{
+        display: flex;
+        flex-direction: column;
+    }
+}
